@@ -1,3 +1,16 @@
 # Install cargo-watch (Every update auto build)
 cargo install cargo-watch
 example: cargo watch -x c -x t -x r (first check then test then run)
+
+# code coverage
+cargo install cargo-tarpaulin
+example: cargo tarpaulin --ignore-tests
+
+# linting
+rustup component add clippy
+example: cargo clippy
+	 cargo clippy -- -D warnings
+
+# Vulnerabilities
+cargo install cargo-audit
+example: cargo audit
