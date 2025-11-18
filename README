@@ -1,0 +1,3 @@
+# Install cargo-watch (Every update auto build)
+cargo install cargo-watch
+example: cargo watch -x c -x t -x r (first check then test then run)
